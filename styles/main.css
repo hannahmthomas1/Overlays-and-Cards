@@ -8,7 +8,7 @@
   --huntergreen-color: #355a3a;
   --dustyblue-color: #334e58;
   --background-color: #f1efe4;
-  --overlay-color: rgba(0, 0, 0, 0.3);
+  --overlay-color: rgba(0, 0, 0, 0.15);
 }
 
 .container {
@@ -29,6 +29,8 @@ body {
 picture img {
   width: 100%;
   display: block;
+  height: 100%;
+  object-fit: cover;
 }
 
 img {
@@ -161,11 +163,13 @@ a:active {
 .cards p {
   color: var(--background-color);
   text-align: center;
-  margin: 3rem;
+  margin: 1rem;
   text-shadow: 2px 2px 2px var(--maintext-color);
   font-size: 2rem;
+  line-height: 1;
 }
 
 .card:hover .overlay {
   opacity: 0;
 }
+
